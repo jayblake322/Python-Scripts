@@ -1,0 +1,15 @@
+x = 1
+print(x)
+print(x +2)
+
+import shelve
+with shelve.open('spam') as db:
+    db['eggs'] = 'eggs'
+    db['eggss'] = 'eggsssss'
+    y = db['eggs']
+
+    db.close()
+
+
+print(y)
+
